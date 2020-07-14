@@ -24,8 +24,22 @@
                             </div>
                         </li>
                     </ul>
+                    <ul class="navbar-nav nav my-4 d-xl-none mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="https://github.com/twbs">GitHub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://twitter.com/getbootstrap">Twitter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/4.5/examples/">Examples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/4.5/about/overview/">About</a>
+                        </li>
+                    </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control mr-1 mr-sm-2 w-auto" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </div>

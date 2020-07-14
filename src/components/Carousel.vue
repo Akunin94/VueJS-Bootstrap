@@ -1,12 +1,12 @@
 <template>
    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
-        <ol class="carousel-indicators">
+        <ol class="carousel-indicators d-none d-sm-flex">
             <li v-for="(slide, index) in slides" :key="slide.index" data-target="#carouselExampleControls" :data-slide-to="index" :class="{ active: index == 0 }"></li>
         </ol>
         <div class="carousel-inner">
             <div v-for="(slide, index) in slides" :key="slide.index" class="carousel-item" :class="{ active: index == 0 }" :data-interval="slide.interval">
                 <img class="d-block w-100" :src="slide.icon" :alt="slide.alt" :title="slide.title">
-                <div v-if="slide.caption" class="carousel-caption d-none d-lg-block">
+                <div v-if="slide.caption" class="carousel-caption d-none d-md-block">
                     <h5 v-if="slide.caption.title">First slide label</h5>
                     <p v-if="slide.caption.body">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     <button v-if="slide.caption.button" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Launch demo modal</button>
@@ -60,6 +60,10 @@ export default {
 </script>
 
 <style scoped>
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 30px;
+    height: 30px;
+}
 @media all and (min-width: 576px) {
     .carousel-control-next-icon, .carousel-control-prev-icon {
         width: 50px;

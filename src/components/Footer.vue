@@ -1,6 +1,6 @@
 <template>
     <footer class="container-fluid py-4 text-muted text-center" style="background: rgba(0, 0, 0, .05)">
-        <ul class="nav nav-pills mb-3 justify-content-center">
+        <ul class="nav nav-pills mb-3 justify-content-center d-none d-xl-flex">
             <li class="nav-item">
                 <a class="nav-link active" href="https://github.com/twbs">GitHub</a>
             </li>

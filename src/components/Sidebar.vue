@@ -6,9 +6,9 @@
         </li>
     </ul>
     <form class="border border-primary p-3 mb-4">
+        <h6>Подписаться на рассылку</h6>
         <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">  
+            <input type="email" required class="form-control" id="exampleInputEmail1" placeholder="E-mail" aria-describedby="emailHelp">  
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
