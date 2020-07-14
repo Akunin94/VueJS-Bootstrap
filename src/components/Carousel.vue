@@ -60,8 +60,10 @@ export default {
 </script>
 
 <style scoped>
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 50px;
-    height: 50px;
+@media all and (min-width: 576px) {
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 50px;
+        height: 50px;
+    }
 }
 </style>
